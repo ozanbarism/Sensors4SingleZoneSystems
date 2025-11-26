@@ -56,7 +56,7 @@ The original filtering has been enhanced to include two **strict physical constr
 * **Time Continuity:** Data points must maintain continuous, 5-minute intervals ($\pm 10$ seconds) to ensure the accuracy of the time axis used for curve fitting.
 * **Monotonic Decrease:** The indoor temperature must be **monotonically decreasing** during the heating-off periods (i.e., $\Delta T \le 0$ between consecutive readings).
 
-This strict monotonic decrease check ensures that the selected periods are not contaminated by unmodeled heat sources (e.g., solar gain, internal heat from appliances, or latent heat from a recent heating cycle).
+This strict monotonic decrease check ensures that the selected periods are not contaminated by unmodeled heat sources (e.g., solar gain, internal heat from appliances, or latent heat from a recent heating cycle). This new implementation can be found in heating_RC_updated.py (Line 159).
 
 ### Impact on Results
 
